@@ -20,7 +20,7 @@ The Arduino is connected via USB to the Raspberry Pi and communicates via Serial
 
 The solenoid valve to control water flow is connected to a relay hat that is mounted on top of the Raspberry Pi, and the camera is connnected directly to the Raspberry Pi through the camera port.
 
-![alt_text](https://github.com/akasharunabharathi/soil-moisture-estimation/blob/main/Screen%20Shot%202022-12-15%20at%201.53.05%20PM.png)
+![alt_text](https://github.com/akasharunabharathi/soil-moisture-estimation/blob/main/final_circuit.png)
 # File Structure
 
 The project is organized into different dircectories depending on their specific utilities. Enclosed below is a brief overview of the contents of each directory.

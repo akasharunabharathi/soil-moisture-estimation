@@ -23,5 +23,7 @@ The solenoid valve to control water flow is connected to a relay hat that is mou
 The project is organized into different dircectories depending on their specific utilities. Enclosed below is a brief overview of the contents of each directory.
 
 • gardener_pi: Contains all Python code for the moisture detection, image capture, and data logging. For Raspberry Pi.
+
 • arduino: Code for interfacing with soil moisture sensor and sending data to Raspberry Pi via Serial Communication.
+
 • data-logs: Contains all CSV files, and images sub-folder for Computer Vision model training. The sub folder is organized into `train` and `test` subfolders, each of which are further organized into `wet_soil` and `dry_soil` folders. Image capture data is split into an 85%-15% ratio between the `train` and `test` modules respectively.

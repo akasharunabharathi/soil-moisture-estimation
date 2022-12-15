@@ -15,3 +15,11 @@ The Arduino Uno is connected via USB to the Raspberry Pi and communicates via Se
 ![alt_text](https://roboticsbackend.com/wp-content/uploads/2019/11/raspberrypi_arduino_uno_serial_usb.png)
 
 (To ensure Serial Communication works, head to Menu -> Prefernces -> Interfaces and toggle Serial Communication "on". Reboot Raspberry Pi to make changes take effect.)
+
+The solenoid valve to control water flow is connected to a relay hat that is mounted on top of the Raspberry Pi, and the camera is connnected directly to the Raspberry Pi through the camera port.
+
+# File Structure
+
+The project is organized into different dircectories depending on their specific utilities. Enclosed below is a brief overview of the contents of each directory.
+
+• 

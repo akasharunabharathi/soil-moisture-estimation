@@ -6,11 +6,13 @@ The approach taken to solving this problem is that we're trying to determine if 
 
 # Hardware Setup
 
-This project uses a Raspberry Pi 4, an Arduino Uno, a DFROBOT Capacitive V1.0 Soil Moisture sensor,
+This project uses a Raspberry Pi 4, an Arduino Uno, a DFROBOT Capacitive V1.0 Soil Moisture sensor, and a Raspberry Pi 5MP camera.
 
 ![alt_text](https://dfimg.dfrobot.com/nobody/wiki/33a9b85e364788554501f1dd493ba846.png)
 
-The Arduino Uno is connected via USB to the Raspberry Pi and communicates via Serial Communication. We are currently connected to `/dev/ttyUSB0`, which is a hardcoded address that might need to be changed depending on the the user.
+(The Arduino Uno acts an interface between the physical sensor and the Raspberry Pi due to the lack of an ADC concverter. Should the user find an ADC module, they may replace the arduino and remove it entirely.)
+
+The Arduino is connected via USB to the Raspberry Pi and communicates via Serial Communication. We are currently connected to `/dev/ttyUSB0`, which is a hardcoded address that might need to be changed depending on the the user.
 
 ![alt_text](https://roboticsbackend.com/wp-content/uploads/2019/11/raspberrypi_arduino_uno_serial_usb.png)
 
@@ -27,3 +29,5 @@ The project is organized into different dircectories depending on their specific
 • arduino: Code for interfacing with soil moisture sensor and sending data to Raspberry Pi via Serial Communication.
 
 • data-logs: Contains all CSV files, and images sub-folder for Computer Vision model training. The sub folder is organized into `train` and `test` subfolders, each of which are further organized into `wet_soil` and `dry_soil` folders. Image capture data is split into an 85%-15% ratio between the `train` and `test` modules respectively.
+
+All file paths have been specified only using variables and nowhere does the code contain hidden hardcoded addresses – should the user wish to change specific implementation details, it should be easily doable.

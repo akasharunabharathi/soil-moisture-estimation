@@ -1,4 +1,4 @@
-# visual-soil-moisture-estimator
+# Soil Moisture Estimation using Computer Vision
 
 The project involves data collection on soil moisture content (from a traditional soil moisture measurement probe), temperature data, and images of topsoil to achieve to design new, cost-effective and reliable way(s) of detecting soil moisture to solve the problem of gradual corrosion and dropping reliability that users experience with traditional soil-measurement probes available on the market today.
 

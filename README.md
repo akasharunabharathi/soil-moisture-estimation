@@ -8,4 +8,4 @@ The approach taken to solving this problem is that we're trying to determine if 
 
 This project uses a Raspberry Pi 4, an Arduino Uno, a DFROBOT Capacitive V1.0 Soil Moisture sensor,
 
-!alt_text[https://dfimg.dfrobot.com/nobody/wiki/33a9b85e364788554501f1dd493ba846.png]
+![alt_text](https://dfimg.dfrobot.com/nobody/wiki/33a9b85e364788554501f1dd493ba846.png)

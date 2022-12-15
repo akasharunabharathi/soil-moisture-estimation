@@ -15,10 +15,10 @@ void loop() {
     Serial.print("Very wet:");
     Serial.print(soilMoistureValue);
   } else if (soilMoistureValue > (waterValue + intervals) && soilMoistureValue < (airValue - intervals)) {
-    Serial.println("Wet:");
+    Serial.print("Wet:");
     Serial.print(soilMoistureValue);
   } else if (soilMoistureValue < airValue && soilMoistureValue > (airValue - intervals)) {
-    Serial.println("Dry:");
+    Serial.print("Dry:");
     Serial.print(soilMoistureValue);
   }
   delay(100);

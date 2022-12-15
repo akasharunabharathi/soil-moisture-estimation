@@ -27,7 +27,6 @@ def soil_moisture_reader():
         # This is the crux of our soil mositure detection function
         # In other modules, this function will be called multiple times over and over in a loop
         # Perhaps at the rate of once per second.
-        time.sleep(1000)
         if ser.in_waiting > 0:
             line = ser.readline().decode('utf-8').rstrip()
             contents = line.split(":")
